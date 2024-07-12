@@ -1,10 +1,10 @@
 ---
 
-# Hackathletes App
+# Hackathletes App (CODEDEX HACKATHON CHALLENGE 2024 Paris Olympics Predictions)
 
 Try it [here](https://hackathletes.streamlit.app)
 
-Welcome to the Hackathletes App! This application is designed to provide an interactive experience for exploring predictions and analytics for the Paris 2024 Olympic Summer Games.
+Welcome to the Hackathletes App! This application is designed to provide an interactive experience for exploring predictions and analytics for the Paris 2024 Olympic Summer Games for the [Codédex](https://www.codedex.io) hackathon 
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ Welcome to the Hackathletes App! This application is designed to provide an inte
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
+- [Contibutors](#contributors)
 
 ## Overview
 
@@ -64,3 +64,7 @@ We welcome contributions from the community! To contribute, please follow these 
 ## License
 
 This project is licensed under the MIT License. 
+
+##contributors
+
+Shout out to our good hackathon team 
