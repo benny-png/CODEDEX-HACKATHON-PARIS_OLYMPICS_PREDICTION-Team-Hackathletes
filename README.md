@@ -2,7 +2,7 @@
 
 # Hackathletes App
 
-[![Streamlit App](https://hackathletes.streamlit.app)](https://hackathletes.streamlit.app)
+[Hackathletes App](https://hackathletes.streamlit.app)
 
 Welcome to the Hackathletes App! This application is designed to provide an interactive experience for exploring predictions and analytics for the Paris 2024 Olympic Summer Games.
 
