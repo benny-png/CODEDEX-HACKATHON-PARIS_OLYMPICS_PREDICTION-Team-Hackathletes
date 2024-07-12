@@ -4,6 +4,8 @@
 
 Try the app [here.](https://hackathletes.streamlit.app)
 
+![Hackathletes](https://github.com/benny-png/CODEDEX-HACKATHON-PARIS_OLYMPICS_PREDICTION-Team-Hackathletes/blob/main/hackathletes.png)
+
 Welcome to the Hackathletes App! This application is designed to provide an interactive experience for exploring predictions and analytics for the Paris 2024 Olympic Summer Games for the Codédex hackathon check them out [here.](https://www.codedex.io)
 
 ## Table of Contents
