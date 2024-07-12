@@ -32,7 +32,7 @@ if app_mode == "Athlete's Swimming Time":
     st.title("Paris Olympics Swimming Predictions 🚀")
     st.write("Predict the winning times for freestyle swimming events at the Paris Olympics based on historical data.")
     st.write(f"Mean Squared Error (MSE): {swimming_model_accuracy}")
-
+    st.markdown("[GitHub Repo](https://github.com/benny-png/CODEDEX-HACKATHON-PARIS_OLYMPICS_PREDICTION-Team-Hackathletes)")
     # Input fields for swimming event prediction
     st.warning("Input Athletes Information (Model Features)")
     year = st.number_input("Year (for this case 2024)", min_value=1896, max_value=2024, step=1)
