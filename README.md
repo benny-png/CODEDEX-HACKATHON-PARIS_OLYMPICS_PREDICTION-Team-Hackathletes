@@ -69,6 +69,6 @@ We welcome contributions from the community! To contribute, please follow these 
 
 This project is licensed under the MIT License. 
 
-##contributors
+## Collaborators
 
 Shout out to our good hackathon team [Rishabh](https://github.com/a-rishabh), [Tess](https://github.com/teressacodes) and [me](https://github.com/benny-png)
