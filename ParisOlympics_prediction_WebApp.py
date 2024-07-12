@@ -35,15 +35,10 @@ if app_mode == "Athlete's Swimming Time":
 
     # Input fields for swimming event prediction
     st.warning("Input Athletes Information (Model Features)")
-    year = st.number_input("Year", min_value=1896, max_value=2024, step=1)
-    relay = st.selectbox("Relay", [False, True])
-    rank = st.number_input("Rank", min_value=1, max_value=10, step=1)
-    location = st.selectbox("Location", [
-        'Amsterdam', 'Angeles', 'Athens', 'Atlanta', 'Barcelona', 'Beijing', 'Berlin',
-        'City', 'Helsinki', 'London', 'Melbourne', 'Montreal', 'Moscow', 'Munich',
-        'Paris', 'Rio', 'Rome', 'Seoul', 'Sydney', 'Tokyo'
-    ])
-    team = st.selectbox("Team", list(team_abbreviations.keys()))
+    year = st.number_input("Year (for this case 2024)", min_value=1896, max_value=2024, step=1)
+    relay = st.selectbox("Relay Event ?", [False, True])
+    rank = st.number_input("Athlete's previous Rank", min_value=1, max_value=10, step=1)
+    team = st.selectbox("Team ( Country )", list(team_abbreviations.keys()))
 
     # Prepare the input data for swimming model
     team_abbreviation = team_abbreviations[team]
@@ -52,26 +47,26 @@ if app_mode == "Athlete's Swimming Time":
         'Distance (in meters)': [100],  # Assuming 100 meters distance for simplicity
         'Relay?': [relay],
         'Rank': [rank],
-        'Location_Amsterdam': [location == 'Amsterdam'],
-        'Location_Angeles': [location == 'Angeles'],
-        'Location_Athens': [location == 'Athens'],
-        'Location_Atlanta': [location == 'Atlanta'],
-        'Location_Barcelona': [location == 'Barcelona'],
-        'Location_Beijing': [location == 'Beijing'],
-        'Location_Berlin': [location == 'Berlin'],
-        'Location_City': [location == 'City'],
-        'Location_Helsinki': [location == 'Helsinki'],
-        'Location_London': [location == 'London'],
-        'Location_Melbourne': [location == 'Melbourne'],
-        'Location_Montreal': [location == 'Montreal'],
-        'Location_Moscow': [location == 'Moscow'],
-        'Location_Munich': [location == 'Munich'],
-        'Location_Paris': [location == 'Paris'],
-        'Location_Rio': [location == 'Rio'],
-        'Location_Rome': [location == 'Rome'],
-        'Location_Seoul': [location == 'Seoul'],
-        'Location_Sydney': [location == 'Sydney'],
-        'Location_Tokyo': [location == 'Tokyo'],
+        'Location_Amsterdam': [False],
+        'Location_Angeles': [False],
+        'Location_Athens': [False],
+        'Location_Atlanta': [False],
+        'Location_Barcelona': [False],
+        'Location_Beijing': [False],
+        'Location_Berlin': [False],
+        'Location_City': [False],
+        'Location_Helsinki': [False],
+        'Location_London': [False],
+        'Location_Melbourne': [False],
+        'Location_Montreal': [False],
+        'Location_Moscow': [False],
+        'Location_Munich': [False],
+        'Location_Paris': [True],
+        'Location_Rio': [False],
+        'Location_Rome': [False],
+        'Location_Seoul': [False],
+        'Location_Sydney': [False],
+        'Location_Tokyo': [False],
         'Stroke_Freestyle': [True],  # Assuming Freestyle stroke for simplicity
         'Gender_Men': [True],  # Assuming Men gender for simplicity
     })
@@ -127,7 +122,7 @@ elif app_mode == "Country's Winning Medals":
         st.success(f'Predicted Total Medals: {int(round(medals_prediction[0]))}')
 
     # Display the chloropeth map of world medal distribution
-    st.header("World Medal Distribution")
+    st.header("Tokyo Olympics World Medal Distribution")
     chloropeth_image_path = 'medals_chloropethmap.png'
     st.image(chloropeth_image_path, caption='World Medal Distribution', width=850)
     st.markdown("[View Detailed Analysis](https://colab.research.google.com/drive/16i3dut1C2pRn9Olcgd_mjv5RfqlNCl5Z#scrollTo=1mxp1upio6ad)")
