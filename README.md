@@ -71,4 +71,4 @@ This project is licensed under the MIT License.
 
 ## Collaborators
 
-Shout out to our good hackathon team [Rishabh](https://github.com/a-rishabh) , [Tess](https://github.com/teressacodes) and [Benny](https://github.com/benny-png)
+Shout out to our great hackathon team [Rishabh](https://github.com/a-rishabh) , [Tess](https://github.com/teressacodes) and [Benny](https://github.com/benny-png)
