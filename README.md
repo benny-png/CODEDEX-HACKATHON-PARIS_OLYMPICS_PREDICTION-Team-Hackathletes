@@ -1,6 +1,6 @@
 ---
 
-# Hackathletes App (Codédex Hackathon Challenge 2024 - Paris Olympics Predictions)
+# Hackathletes App 📈 (Codédex Hackathon Challenge 2024 - Paris Olympics Predictions)
 
 Try it [here](https://hackathletes.streamlit.app)
 
